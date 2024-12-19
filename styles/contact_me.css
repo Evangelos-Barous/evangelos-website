@@ -1,0 +1,62 @@
+.contact-container {
+    background-color: purple;
+}
+
+.email-container,
+.name-container {
+    margin-top: 7px;
+    padding-left: 5px;
+}
+
+.email-text,
+.name-text {
+    font-size: 12px;
+    padding: 2px;
+    color: white;
+}
+
+.email-bar,
+.name-bar {
+    width: 300px;
+    margin: 2px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: black;
+    border-radius: 3px;
+}
+
+.email-box {
+    width: 620px;
+    padding-left: 7px;
+    margin-top: 20px;
+}
+
+.email-content {
+    width: 600px;
+    height: 500px;
+    resize: none;
+    display: flex;
+}
+
+.send-button-container {
+    width: 600px;
+    margin-top: 14px;
+    margin-left: 7px;
+    margin-bottom: 7px;
+    display: flex;
+    justify-content: center;
+}
+
+.send-button {
+    border-radius: 10px;
+    border: none;
+    padding: 5px;
+    font-size: 12px;
+    background-color: darkblue;
+    color: white;
+    transition: background-color 0.15s;
+}
+
+.send-button:hover {
+    background-color: blue;
+}

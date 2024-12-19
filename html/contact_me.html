@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Contact Me</title>
+        <link rel="stylesheet" href="../styles/header.css">
+        <link rel="stylesheet" href="../styles/contact_me.css">
+        <style>
+            .contact-me-logo {
+                background-color: rgb(149, 127, 239);
+                display: flex;
+                justify-content: center;
+                vertical-align: center;
+                flex-shrink: 0;
+                margin-bottom: 50px;
+            }
+
+            .contact-me-logo-text {
+                font-size: 45px;
+                flex-shrink: 0;
+                font-weight: bold;
+            }
+
+            .work-experience-container {
+                margin-top: 20px;
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                column-gap: 40px;
+            }
+
+            .work-experience-column {
+                background-color: rgb(149, 127, 239);
+                padding-top: 20px;
+                padding-left: 10px;
+                font-weight: bold;
+                font-size: 20px;
+            }
+
+            .img-container {
+                display: flex;
+                justify-content: center;
+            }
+
+            .morse-img,
+            .collins-img,
+            .ssci-img {
+                height: 150px;
+                width: 150px;
+                padding-bottom: 10px;
+                border-radius: 45px;
+            }
+
+            .linkedin-img {
+                height: 100px;
+                width: 100px;
+            }
+
+            .linkedin-img:hover {
+                cursor: pointer;
+            }
+
+            .cell-number {
+                margin-top: 20px;
+            }
+
+            .cell-number,
+            .phone-number,
+            .linkedin-container {
+                display: flex;
+                justify-content: center;
+                vertical-align: center;
+            }
+
+            @media (max-width: 700px) {
+                .work-experience-container {
+                    grid-template-columns: 1fr;
+                }
+
+                .work-experience-column {
+                    margin-bottom: 40px;
+                }
+
+                .work-experience-content {
+                    justify-content: center;
+                    align-items: center;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="header">
+            <div class="header-title">
+                <p class="header-title-text">
+                    Evangelos Barous
+                </p>
+            </div>
+            <div class="header-options">
+                <button onclick="document.location='../evangelos-barous.html'" class="home-button">
+                    Home
+                </button> 
+                <button onclick="document.location='about_me.html'" class="about-me-button">
+                    About Me
+                </button>
+                <button onclick="document.location='work_experience.html'" class="work-experience-button">
+                    Work Experience
+                </button>
+                <button onclick="document.location='contact_me.html'" class="contact-me-button">
+                    Contact Me
+                </button>
+            </div>
+        </div>
+
+        <div class="contact-me-logo">
+            <p class="contact-me-logo-text">
+                Contact Me
+            </p>
+        </div>
+
+        <div class="work-experience-container">
+            <div class="work-experience-column">
+                <div class="img-container">
+                    <img class="collins-img" src="../images/email-icon.jpg">
+                </div>
+                <div class="contact-me-text">
+                    <div class="phone-number-title">
+                        <div class="cell-number">Email Address:</div>
+                    </div>
+                    <div class="phone-number-content">
+                        <div class="phone-number">eibarous@yahoo.com</div>
+                    </div>
+                    <div class="phone-number-title">
+                        <div class="cell-number">School Email:</div>
+                    </div>
+                    <div class="phone-number-content">
+                        <div class="phone-number">barous.e@northeastern.edu</div>
+                    </div>
+                </div>
+            </div>
+            <div class="work-experience-column">
+                <div class="img-container">
+                    <img class="ssci-img" src="../images/link-icon.png">
+                </div>
+                <div class="contact-me-text">
+                    <div class="phone-number-title">
+                        <div class="cell-number">Linkedin</div>
+                    </div>
+                    <div class="phone-number-content">
+                        <a class="linkedin-container" href="https://www.linkedin.com/in/evangelos-barous-34a86b213/">
+                            <img class="linkedin-img" src="../images/linkedin-logo.webp">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- <div class="contact-container">
+            <div class="name-container">
+                <div class="name-text">
+                    Name
+                </div>
+                <div class="name-input">
+                    <input class="name-bar" type="text">
+                </div>
+            </div>
+            <div class="email-container">
+                <div class="email-text">
+                    Email
+                </div>
+                <div class="email-input">
+                    <input class="email-bar" type="text">
+                </div>
+            </div>
+            <div class="email-box">
+                <textarea class="email-content"></textarea> 
+            </div>
+            <div class="send-button-container">
+                <button class="send-button">
+                    Send Email
+                </button>
+            </div>
+        </div> -->
+    </body>
+</html>

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>About Me</title>
+        <link rel="stylesheet" href="../styles/header.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <style>
+            body {
+                background-color: rgb(113, 97, 239);
+                font-family: "Roboto Condensed", "Arial";
+                color: rgb(239, 217, 206);
+                padding-top: 10px;
+            }
+
+            .about-me-top-section {
+                display: flex;
+            }
+
+            .profile-pic-container {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding-left: 50px;
+            }
+
+            .profile-pic {
+                height: 400px;
+                width: 400px;
+                border-color: rgb(149, 127, 239);
+                border-width: 10px;
+                border-style: solid;
+            }
+
+            .basic-info {
+                display: flex;
+                flex-direction: column;
+                min-width: 100px;
+            }
+
+            .about-me-title-text,
+            .about-me-text {
+                padding-left: 20px;
+                padding-right: 120px;
+                margin-top: -20px;
+                font-size: 23px;
+            }
+
+            @media (max-width: 1000px) {
+                .about-me-top-section {
+                    flex-direction: column;
+                }
+
+                .about-me-title-text {
+                    margin-top: 20px;
+                }
+            }
+
+            .about-me-title-text {
+                font-size: 40px;
+                font-weight: bold;
+            }
+
+            .resume-container {
+                background-color: rgb(113, 97, 239);
+                display: flex;
+                justify-content: center;
+                vertical-align: center;
+                margin-top: 30px;
+            }
+
+            .resume-button {
+                background-color: rgb(50, 50, 211);
+                color: white;
+                font-size: 20px;
+                font-family: "Roboto Condensed", "Arial";
+                font-weight: bold;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border: none;
+                border-radius: 5px;
+                padding: 5px;
+                transition: background-color 0.15s;
+            }
+
+            .resume-button:hover {
+                background-color: rgb(82, 82, 232);
+                cursor: pointer;
+            }
+
+            a {
+                all: unset;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class="header">
+            <div class="header-title">
+                <p class="header-title-text">
+                    Evangelos Barous
+                </p>
+            </div>
+            <div class="header-options">
+                <button onclick="document.location='../evangelos-barous.html'" class="home-button">
+                    Home
+                </button> 
+                <button onclick="document.location='about_me.html'" class="about-me-button">
+                    About Me
+                </button>
+                <button onclick="document.location='work_experience.html'" class="work-experience-button">
+                    Work Experience
+                </button>
+                <button onclick="document.location='contact_me.html'" class="contact-me-button">
+                    Contact Me
+                </button>
+            </div>
+        </div>
+
+        <div class="about-me-container">
+            <div class="about-me-top-section">
+                <div class="profile-pic-container">
+                    <img class="profile-pic" src="../images/profile-pic.jpg">
+                </div>
+                <div class="basic-info">
+                    <div class="about-me-text-container">
+                        <div class="about-me-title">
+                            <p class="about-me-title-text">About Me:</p>
+                        </div>
+                    </div>
+                    <div class="about-me-text">
+                        Hi, I'm Evangelos Barous, and my journey into engineering began as far back as when I was a kid, where I fell in love
+                        building LEGOs, feeling a joy unlike no other when I got to see how it all went together. Then in high school, when I
+                        coded my first engineering project in class, I got that same feeling, cementing my decision to go into engineering
+                        <br><br>
+                        And now I'm a student at Northeastern University studying electrical and computer engineering with 1.5 years of work experience 
+                        in software and embedded engineering. Over the years, I've been featured on Northeastern websites for my contributions to research,
+                        and have had my work featured and put into actual products, ranging from drones and air supply drops, to F35 jets. 
+                        <br><br>
+                        I specialize in C++, Python, and C#, all involving embedded engineering products. I am currently looking for any full
+                        time job as an embedded or firmware engineer. Outside of work, you'll definitely catch me getting a lift at the gym, or doing
+                        muay thai. If you'd like to contact me, learn more about me, or connect with me, please see the Contact Me section above, or
+                        click below to download my resume or go to my Linkedin profile to see more.
+                    </div>
+                </div>
+            </div>
+            <div class="resume-container">
+                <a href="/files/Evangelos Barous Resume.pdf" download="Evangelos-Barous-Resume.pdf">
+                    <button class="resume-button">
+                        <div class="download-cv">RESUMÉ</div>
+                    </button>
+                </a>
+            </div>
+        </div>
+    </body>
+</html>
